@@ -1,0 +1,27 @@
+.vid-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+.btn-wrapper {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 250px;
+}
+.like-btn {
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+}
+.like-btn > i {
+  font-size: 35px;
+  cursor: pointer;
+}
