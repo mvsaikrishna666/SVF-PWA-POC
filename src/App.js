@@ -8,7 +8,7 @@ const App = () => {
   const [position, setPosition] = useState(0);
   const List = [
     {
-      src: "http://www.exit109.com/~dnn/clips/RW20seconds_2.mp4",
+      src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
       type: "video/mp4",
       index: 1,
     },
