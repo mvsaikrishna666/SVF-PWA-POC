@@ -8,7 +8,7 @@ const VideoScreen = (props) => {
 
   const videoJsOptions = {
     autoplay: true,
-    muted: true,
+    muted: false,
     width: window.innerWidth,
     height: window.innerHeight,
     controls: false,
@@ -52,10 +52,11 @@ const VideoScreen = (props) => {
   // useEffect(() => {
   //   some();
   // }, []);
-  useEffect(() => {
-    props.index === Math.round(props.scrollIndex) &&
-      console.log(props.index, Math.round(props.scrollIndex));
-  }, [props.scrollIndex]);
+
+  // useEffect(() => {
+  //   props.index === Math.round(props.scrollIndex) &&
+  //     console.log(props.index, Math.round(props.scrollIndex));
+  // }, [props.scrollIndex]);
   return (
     <div className="vid-container">
       <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
