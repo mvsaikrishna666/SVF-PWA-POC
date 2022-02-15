@@ -53,7 +53,9 @@ export const VideoJS = (props) => {
   //   }
   // }, [options, videoRef, playerRef]);
 
-  const TogglePlay = () => {
+  const TogglePlay = (e) => {
+    e.stopPropagation();
+    console.log("clicked");
     if (togglePlay) {
       playerRef.current.pause();
       setTogglePlay(false);
@@ -77,7 +79,7 @@ export const VideoJS = (props) => {
   return (
     <div data-vjs-player>
       <video
-        onClick={() => TogglePlay()}
+        onClick={(e) => TogglePlay(e)}
         ref={videoRef}
         className="video-js vjs-big-play-centered"
       />
